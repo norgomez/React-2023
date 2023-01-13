@@ -6,7 +6,9 @@ import Profile from './pages/Profile';
 import Error from './pages/Error';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
+import CardLinks from './components/cardlinks/CardsLinks'
 import { Button, Divider } from '@mui/material';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -37,11 +39,9 @@ function App() {
         <Route path='*' element={<Error />} />
       </Routes>
 
-      <Divider />
+      <CardLinks />
 
-      <footer>
-        <h2>This is the footer /</h2>
-      </footer>
+      <Footer />
     </Router>
   );
 }
